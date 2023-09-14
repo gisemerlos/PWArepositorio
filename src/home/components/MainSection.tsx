@@ -7,9 +7,8 @@ import {
 } from "@mui/material";
 
 const MainSection = () => {
-  const title = "Vos crecer.\n Nosotros te queremos ayudar";
   const subtitle =
-    "Crea una web con plantillas impecables, fácil edición y sin codificación.";
+    "¡Usar roomsite es realmente sencillo! Sigue estos tips  para que tu experiencia sea mas sensacional.";
   const sm = useMediaQuery("min-width(600px)");
 
   return (
@@ -18,77 +17,6 @@ const MainSection = () => {
         background: "none",
       }}
     >
-      <Box
-        display={"grid"}
-        gridTemplateColumns={{
-          xs: "1fr",
-          sm: "1fr 1fr",
-        }}
-        gridTemplateRows="auto"
-        gridTemplateAreas={{
-          xs: "'.' '.' 'title' 'subtitle' 'btn'",
-          sm: "'. img' 'title img' 'subtitle img' 'btn img' '. img'",
-        }}
-        columnGap={{
-          xs: 0,
-          sm: 2,
-        }}
-        height={{
-          xs: "92vh",
-        }}
-      >
-        <Box
-          gridArea={"title"}
-          alignSelf={{
-            xs: "end",
-            sm: "end",
-          }}
-          textAlign={{
-            xs: "center",
-            sm: "left",
-          }}
-        >
-          <Typography variant={sm ? "h2" : "h3"} fontWeight="bold">
-            {title}
-          </Typography>
-        </Box>
-        <Box
-          textAlign={{
-            xs: "center",
-            sm: "left",
-          }}
-          gridArea={"subtitle"}
-          alignSelf={{
-            xs: "center",
-          }}
-        >
-          <Typography variant="h5">{subtitle}</Typography>
-        </Box>
-        <Box
-          gridArea={"btn"}
-          alignSelf={{
-            xs: "start",
-            sm: "start",
-          }}
-          display={"flex"}
-          justifySelf={{
-            xs: "center",
-            sm: "left",
-          }}
-        >
-          <Button variant="contained">SIGUIENTE</Button>
-        </Box>
-
-        <Box
-          gridArea={"img"}
-          sx={{
-            backgroundImage: `url("https://picsum.photos/1200/800")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-      </Box>
       <Box marginTop={"25"} display={"flex"} justifyContent={"center"}>
         <img src="https://cdn.pixabay.com/photo/2022/08/12/04/25/house-7380808_960_720.jpg " />
       </Box>
