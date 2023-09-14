@@ -76,7 +76,7 @@ const MainSection = () => {
             sm: "left",
           }}
         >
-          <Button variant="contained">Comienza a crear</Button>
+          <Button variant="contained">SIGUIENTE</Button>
         </Box>
 
         <Box
@@ -88,6 +88,9 @@ const MainSection = () => {
             backgroundRepeat: "no-repeat",
           }}
         />
+      </Box>
+      <Box marginTop={"25"} display={"flex"} justifyContent={"center"}>
+        <img src="https://cdn.pixabay.com/photo/2022/08/12/04/25/house-7380808_960_720.jpg " />
       </Box>
     </Container>
   );
