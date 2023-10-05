@@ -5,7 +5,6 @@ import {
   TextField,
   Typography,
   useTheme,
-  Box,
 } from "@mui/material";
 
 const Login = () => {
@@ -39,10 +38,10 @@ const Login = () => {
         >
           Iniciar Sesion
         </Button>
-        <p> Olvidaste tu contraseña?</p>
-        <Button variant="text">RECUPERALA</Button>
       </Stack>
     </Container>
+    <p> Olvidaste tu contraseña? </p>
+
   );
 };
 

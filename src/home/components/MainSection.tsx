@@ -4,6 +4,7 @@ import {
   Container,
   Typography,
   useMediaQuery,
+  Stack,
 } from "@mui/material";
 
 const MainSection = () => {
@@ -17,9 +18,25 @@ const MainSection = () => {
         background: "none",
       }}
     >
-      <Box marginTop={"25"} display={"flex"} justifyContent={"center"}>
-        <img src="https://cdn.pixabay.com/photo/2022/08/12/04/25/house-7380808_960_720.jpg " />
-      </Box>
+      <Stack
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        spacing={2}
+      >
+        <Box>
+          <img
+            width={350}
+            src="https://thumbs.dreamstime.com/z/ventanas-de-departamentos-con-dibujos-animados-en-el-balc%C3%B3n-apartamentos-las-plantas-riego-balcones-relajantes-y-hablando-por-180302037.jpg?w=768 "
+          />
+        </Box>
+        <p text-align={"center"}> Usar roomsite es realmente increible </p>
+        <Button variant="contained"> SIGUIENTE </Button>
+        <p margin-top={"20px"}> No queres ver esto?</p>
+        <Box color={"#9FF781"}>
+        <Button variant="text">SALTAR</Button>
+        </Box>
+      </Stack>
     </Container>
   );
 };
