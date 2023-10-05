@@ -39,7 +39,7 @@ const Login = () => {
         >
           Iniciar Sesion
         </Button>
-        <p> Olvidaste tu contraseña?</p>
+        <p text-align={"center"}> Olvidaste tu contraseña?</p>
         <Button variant="text">RECUPERALA</Button>
       </Stack>
     </Container>
