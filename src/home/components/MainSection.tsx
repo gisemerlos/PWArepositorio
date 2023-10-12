@@ -31,10 +31,13 @@ const MainSection = () => {
           />
         </Box>
         <p text-align={"center"}> Usar roomsite es realmente increible </p>
-        <Button variant="contained"> SIGUIENTE </Button>
+        <Button variant="contained" href="/login">
+          {" "}
+          SIGUIENTE{" "}
+        </Button>
         <p margin-top={"20px"}> No queres ver esto?</p>
         <Box color={"#9FF781"}>
-        <Button variant="text">SALTAR</Button>
+          <Button variant="text">SALTAR</Button>
         </Box>
       </Stack>
     </Container>
