@@ -33,6 +33,7 @@ const Login = () => {
         />
         <Button
           variant="contained"
+          href="/rooms"
           style={{
             marginTop: "2rem",
           }}
